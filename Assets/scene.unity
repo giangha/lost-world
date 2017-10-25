@@ -249,7 +249,7 @@ Transform:
   - {fileID: 294654383}
   - {fileID: 829386824}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757157972
 GameObject:
@@ -348,6 +348,56 @@ Transform:
   m_Father: {fileID: 328822884}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &801912523 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1044322120335652, guid: a33c0f92f25cfaa438d6c40839ac37a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966967912}
+--- !u!61 &801912527
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801912523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &801912528
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801912523}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &810108106
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1492276264852432, guid: 90e0ca15e21c4cc44b058afc0ff556aa, type: 2}
       propertyPath: m_Name
-      value: entity_001 (2)
+      value: hero
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90e0ca15e21c4cc44b058afc0ff556aa, type: 2}
@@ -2075,6 +2125,52 @@ Transform:
   m_Father: {fileID: 328822884}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1001 &1966967912
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.2118559
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.41949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445523004890708, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044322120335652, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+      propertyPath: m_Name
+      value: skeleton
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2040829784
 GameObject:
   m_ObjectHideFlags: 0
