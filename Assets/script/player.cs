@@ -6,6 +6,7 @@ public class player : MonoBehaviour {
     public float speed = 50f;
     public float jumpPower = 150f;
     public float maxspeed = 3;
+    public int curHealth;
   //  public float jumpPower = 150f;
     public bool grounded;
     private Rigidbody2D rb2d;
@@ -26,6 +27,9 @@ public class player : MonoBehaviour {
 
         if(Input.GetButtonDown("Jump"))
         { rb2d.AddForce(Vector2.up * jumpPower); }
+
+        if(curHealth<=0)
+        { Destroy(gameObject); }
     }
     // Update is called once per frame
     void FixedUpdate () {
@@ -39,4 +43,7 @@ public class player : MonoBehaviour {
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
     }
+
+    public void Damage2(int dmg)
+    { curHealth -= dmg; }
 }

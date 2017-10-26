@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - atk
+  - playeratk
+  - playerGotAtk
   layers:
   - Default
   - TransparentFX
