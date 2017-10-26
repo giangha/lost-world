@@ -37,5 +37,6 @@ public class playeratk : MonoBehaviour
             }
         }
         amin.SetBool("atking", attacking);
+
     }
 }
