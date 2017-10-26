@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lost-world", "Assembly-CSharp.csproj", "{7FB19819-E04B-3AB8-BCE9-0F7A65190F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lost-world", "Assembly-CSharp-Editor.csproj", "{C9F15648-80E1-68A7-4158-0B379DEECC04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB19819-E04B-3AB8-BCE9-0F7A65190F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB19819-E04B-3AB8-BCE9-0F7A65190F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB19819-E04B-3AB8-BCE9-0F7A65190F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB19819-E04B-3AB8-BCE9-0F7A65190F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F15648-80E1-68A7-4158-0B379DEECC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F15648-80E1-68A7-4158-0B379DEECC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F15648-80E1-68A7-4158-0B379DEECC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F15648-80E1-68A7-4158-0B379DEECC04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
