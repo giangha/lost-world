@@ -14,19 +14,22 @@ public class player : MonoBehaviour {
     public float x;
     public float y;
     public float z;
-
+    public static bool load_settings = false;
     void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         ///load game
-        /*
-        x = PlayerPrefs.GetFloat("x");
-        y = PlayerPrefs.GetFloat("y");
-        z = PlayerPrefs.GetFloat("z");
-        player.transform.position.x = x;
-        player.transform.position.y = y;
-        player.transform.position.z = z;
-        */
+        if (load_settings)
+        {
+            x = PlayerPrefs.GetFloat("x");
+            y = PlayerPrefs.GetFloat("y");
+            z = PlayerPrefs.GetFloat("z");
+            Vector3 starting_position = new Vector3(x, y, z);
+            transform.position = starting_position;
+            curHealth = PlayerPrefs.GetInt("Health", 100);
+            speed = PlayerPrefs.GetFloat("Speed", 0);
+            jumpPower = PlayerPrefs.GetFloat("JumpPower", 0);
+        }
         ///
 
     }
@@ -60,7 +63,7 @@ public class player : MonoBehaviour {
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
 
-        PlayerPrefs.SetFloat("Health", curHealth);
+        PlayerPrefs.SetInt("Health", curHealth);
         PlayerPrefs.SetFloat("Speed", speed);
         PlayerPrefs.SetFloat("JumpPower", jumpPower);
 
@@ -70,9 +73,16 @@ public class player : MonoBehaviour {
         PlayerPrefs.SetFloat("y", y);
         z = transform.position.z;
         PlayerPrefs.SetFloat("z", z);
+        PlayerPrefs.Save();
 
     }
 
     public void Damage2(int dmg)
     { curHealth -= dmg; }
+
+    static public void Set_continue_function(bool _load_settings)
+    {
+        load_settings = _load_settings;
+   
+    }
 }

@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\script\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\script\LoadSceneOnClick_wsettings.cs" />
     <Compile Include="Assets\script\player.cs" />
     <Compile Include="Assets\script\player_atk_trigger.cs" />
     <Compile Include="Assets\script\playeratk.cs" />
