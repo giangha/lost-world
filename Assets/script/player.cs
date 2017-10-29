@@ -11,10 +11,25 @@ public class player : MonoBehaviour {
     public bool grounded;
     private Rigidbody2D rb2d;
     private Animator anim;
-	void Start () {
+    public float x;
+    public float y;
+    public float z;
+
+    void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
-	}
+        ///load game
+        /*
+        x = PlayerPrefs.GetFloat("x");
+        y = PlayerPrefs.GetFloat("y");
+        z = PlayerPrefs.GetFloat("z");
+        player.transform.position.x = x;
+        player.transform.position.y = y;
+        player.transform.position.z = z;
+        */
+        ///
+
+    }
      void Update()
     {       
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
@@ -30,6 +45,8 @@ public class player : MonoBehaviour {
 
         if(curHealth<=0)
         { Destroy(gameObject); }
+
+
     }
     // Update is called once per frame
     void FixedUpdate () {
@@ -42,6 +59,18 @@ public class player : MonoBehaviour {
 
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
+
+        PlayerPrefs.SetFloat("Health", curHealth);
+        PlayerPrefs.SetFloat("Speed", speed);
+        PlayerPrefs.SetFloat("JumpPower", jumpPower);
+
+        x = transform.position.x;
+        PlayerPrefs.SetFloat("x", x);
+        y = transform.position.y;
+        PlayerPrefs.SetFloat("y", y);
+        z = transform.position.z;
+        PlayerPrefs.SetFloat("z", z);
+
     }
 
     public void Damage2(int dmg)
