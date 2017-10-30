@@ -65,7 +65,7 @@ public class player : MonoBehaviour {
 
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
         PlayerPrefs.SetInt("Health", curHealth);
         PlayerPrefs.SetFloat("Speed", speed);
@@ -79,22 +79,22 @@ public class player : MonoBehaviour {
         PlayerPrefs.SetFloat("z", z);
         PlayerPrefs.Save();
 
-=======
+//=======
         
         
->>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
+//>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
     }
 
     public void Damage2(int dmg)
     { curHealth -= dmg; }
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
     static public void Set_continue_function(bool _load_settings)
     {
         load_settings = _load_settings;
    
     }
-=======
+//=======
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -109,5 +109,5 @@ public class player : MonoBehaviour {
     
     
     
->>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
+//>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
 }
