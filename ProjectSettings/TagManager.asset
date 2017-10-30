@@ -8,6 +8,7 @@ TagManager:
   - atk
   - playeratk
   - playerGotAtk
+  - shoe
   layers:
   - Default
   - TransparentFX

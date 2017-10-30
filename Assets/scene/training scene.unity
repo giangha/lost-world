@@ -1774,9 +1774,11 @@ GameObject:
   m_Component:
   - component: {fileID: 252128618}
   - component: {fileID: 252128617}
+  - component: {fileID: 252128619}
+  - component: {fileID: 252128620}
   m_Layer: 0
   m_Name: heart
-  m_TagString: Untagged
+  m_TagString: shoe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1830,12 +1832,42 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 252128616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.3, y: -1.2, z: 0}
-  m_LocalScale: {x: 1.9671905, y: 1.5968237, z: 1}
+  m_LocalPosition: {x: 31.6, y: 0.1, z: 0}
+  m_LocalScale: {x: 2.9538329, y: 2.5917475, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &252128619
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252128616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 7.9999995
+--- !u!58 &252128620
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252128616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.55272, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.447274
 --- !u!1 &258719706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,9 +2737,10 @@ GameObject:
   m_Component:
   - component: {fileID: 384174252}
   - component: {fileID: 384174251}
+  - component: {fileID: 384174253}
   m_Layer: 0
   m_Name: shoe
-  m_TagString: Untagged
+  m_TagString: shoe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2761,12 +2794,27 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 384174250}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 37.82, y: -2.42, z: 0}
+  m_LocalPosition: {x: 30.1, y: -2.4, z: 0}
   m_LocalScale: {x: 3.843916, y: 4.0346665, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!58 &384174253
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 384174250}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025383946, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.784284
 --- !u!1 &419447851
 GameObject:
   m_ObjectHideFlags: 0
