@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class player : MonoBehaviour {
+
+    
+
     public float speed = 50f;
     public float jumpPower = 150f;
     public float maxspeed = 3;
@@ -62,6 +65,7 @@ public class player : MonoBehaviour {
 
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
+<<<<<<< HEAD
 
         PlayerPrefs.SetInt("Health", curHealth);
         PlayerPrefs.SetFloat("Speed", speed);
@@ -75,14 +79,35 @@ public class player : MonoBehaviour {
         PlayerPrefs.SetFloat("z", z);
         PlayerPrefs.Save();
 
+=======
+        
+        
+>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
     }
 
     public void Damage2(int dmg)
     { curHealth -= dmg; }
+<<<<<<< HEAD
 
     static public void Set_continue_function(bool _load_settings)
     {
         load_settings = _load_settings;
    
     }
+=======
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...
+        if (other.gameObject.CompareTag("shoe"))
+        {
+            other.gameObject.SetActive(false);
+            rb2d.AddForce (rb2d.velocity*3);
+        }
+    }
+    
+    
+    
+    
+>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
 }
