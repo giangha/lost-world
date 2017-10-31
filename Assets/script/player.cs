@@ -10,7 +10,7 @@ public class player : MonoBehaviour {
     public float speed = 50f;
     public float jumpPower = 150f;
     public float maxspeed = 3;
-    public int curHealth;
+    public int curHealth = 100;
   //  public float jumpPower = 150f;
     public bool grounded;
     private Rigidbody2D rb2d;
@@ -26,6 +26,9 @@ public class player : MonoBehaviour {
     void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+
+		playerHealthSlider.maxValue = curHealth;
+		playerHealthSlider.value = curHealth;
         ///load game
         if (load_settings)
         {
@@ -37,10 +40,6 @@ public class player : MonoBehaviour {
             curHealth = PlayerPrefs.GetInt("Health", 100);
             speed = PlayerPrefs.GetFloat("Speed", 0);
             jumpPower = PlayerPrefs.GetFloat("JumpPower", 0);
-
-			//HUD init
-			playerHealthSlider.maxValue = curHealth;
-			playerHealthSlider.value = curHealth;
         }
         ///
 
