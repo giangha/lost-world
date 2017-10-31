@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Skeleton : MonoBehaviour {
 
     public float speed = 50f;
     Animator skeletonAnimator;
     public int currentHealth = 4;
+	public Slider skeletonSlider;
+
     //facing
     public GameObject skeletonGraphic;
     bool canFlip = true;
@@ -26,6 +29,9 @@ public class Skeleton : MonoBehaviour {
         skeletonAnimator = GetComponent<Animator>();
         skeletonRB = GetComponent<Rigidbody2D>();
         skeletonGraphic = this.gameObject;
+
+		skeletonSlider.maxValue = currentHealth;
+		skeletonSlider.value = currentHealth;
     }
 
     // Update is called once per frame
@@ -96,7 +102,11 @@ public class Skeleton : MonoBehaviour {
     }
 
     public void Damage(int dmg)
-    { currentHealth -= dmg; }
+    { 
+		skeletonSlider.gameObject.SetActive (true);
+		currentHealth -= dmg;
+		skeletonSlider.value = currentHealth;
+	}
 
 
 }

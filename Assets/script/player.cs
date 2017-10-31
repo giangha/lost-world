@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour {
 
@@ -18,6 +19,10 @@ public class player : MonoBehaviour {
     public float y;
     public float z;
     public static bool load_settings = false;
+
+	//HUD Variables
+	public Slider playerHealthSlider;
+
     void Start () {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
@@ -32,6 +37,10 @@ public class player : MonoBehaviour {
             curHealth = PlayerPrefs.GetInt("Health", 100);
             speed = PlayerPrefs.GetFloat("Speed", 0);
             jumpPower = PlayerPrefs.GetFloat("JumpPower", 0);
+
+			//HUD init
+			playerHealthSlider.maxValue = curHealth;
+			playerHealthSlider.value = curHealth;
         }
         ///
 
@@ -86,7 +95,10 @@ public class player : MonoBehaviour {
     }
 
     public void Damage2(int dmg)
-    { curHealth -= dmg; }
+    { 
+		curHealth -= dmg; 
+		playerHealthSlider.value = curHealth;
+	}
 //<<<<<<< HEAD
 
     static public void Set_continue_function(bool _load_settings)
