@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour {
 
@@ -58,7 +59,7 @@ public class player : MonoBehaviour {
         { rb2d.AddForce(Vector2.up * jumpPower); }
 
         if(curHealth<=0)
-        { Destroy(gameObject); }
+        { SceneManager.LoadScene(1); }
 
 
     }

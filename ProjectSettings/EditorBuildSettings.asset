@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/scene/menu_scene.unity
     guid: 5fe606aba49d0a14681dd185a30d8c80
   - enabled: 1
+    path: Assets/scene/menu_scene_death.unity
+    guid: 36086b9182205304f8f09228ad5562c8
+  - enabled: 1
     path: Assets/scene/scene.unity
     guid: 43851a8ece233e84c808b07670f617a8
