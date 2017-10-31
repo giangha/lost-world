@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class player : MonoBehaviour {
 
-    
 
+    public float damage = 2;
     public float speed = 50f;
     public float jumpPower = 150f;
     public float maxspeed = 3;
@@ -126,7 +126,14 @@ public class player : MonoBehaviour {
             curHealth += 10;
         }
 
-      
+        if (other.gameObject.CompareTag("sword"))
+        {
+            other.gameObject.SetActive(false);
+
+            damage += 2;
+        }
+
+
     }
     
     
