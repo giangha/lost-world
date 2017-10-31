@@ -95,8 +95,9 @@ public class player : MonoBehaviour {
     }
 
     public void Damage2(int dmg)
-    { 
-		curHealth -= dmg; 
+    {
+       
+        curHealth -= dmg; 
 		playerHealthSlider.value = curHealth;
 	}
 //<<<<<<< HEAD
@@ -114,8 +115,18 @@ public class player : MonoBehaviour {
         if (other.gameObject.CompareTag("shoe"))
         {
             other.gameObject.SetActive(false);
-            rb2d.AddForce (rb2d.velocity*3);
+            //rb2d.AddForce (rb2d.velocity*3);
+            speed += 50;
         }
+
+        if (other.gameObject.CompareTag("heart"))
+        {
+            other.gameObject.SetActive(false);
+            
+            curHealth += 10;
+        }
+
+      
     }
     
     

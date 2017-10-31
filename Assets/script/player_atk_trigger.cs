@@ -9,6 +9,9 @@ public class player_atk_trigger : MonoBehaviour {
     {
         if(other.CompareTag("atk"))
           { other.SendMessageUpwards("Damage",damage); }
-        
+
+  
     }
+    
+
 }

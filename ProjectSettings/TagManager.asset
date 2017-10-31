@@ -9,6 +9,8 @@ TagManager:
   - playeratk
   - playerGotAtk
   - shoe
+  - heart
+  - sword
   layers:
   - Default
   - TransparentFX

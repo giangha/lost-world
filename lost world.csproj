@@ -78,9 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\script\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\script\LoadSceneOnClick_wsettings.cs" />
     <Compile Include="Assets\script\player.cs" />
     <Compile Include="Assets\script\player_atk_trigger.cs" />
     <Compile Include="Assets\script\playeratk.cs" />
+    <Compile Include="Assets\script\QuitOnClick.cs" />
     <Compile Include="Assets\script\Skeleton.cs" />
     <Compile Include="Assets\script\skeleton_atk.cs" />
     <Compile Include="Assets\Spriter2UnityDX\Runtime\EntityRenderer.cs" />
