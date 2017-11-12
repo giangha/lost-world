@@ -23,7 +23,7 @@ TagManager:
   - Sword
   - Hero
   - Skeleton
-  - 
+  - spike
   - 
   - 
   - 
@@ -50,4 +50,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: hero
+    uniqueID: 2350702373
+    locked: 0
+  - name: stuff
+    uniqueID: 1494598857
     locked: 0
