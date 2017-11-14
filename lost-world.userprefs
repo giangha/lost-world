@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Mummy.cs">
     <Files>
       <File FileName="Assets\script\Skeleton.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\player.cs" Line="42" Column="62" />
+      <File FileName="Assets\script\player.cs" Line="1" Column="1" />
       <File FileName="Assets\script\playeratk.cs" Line="1" Column="1" />
       <File FileName="Assets\script\player_atk_trigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\skeleton_atk.cs" Line="16" Column="1" />
+      <File FileName="Assets\script\skeleton_atk.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Mummy.cs" Line="8" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
