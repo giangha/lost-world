@@ -6,15 +6,15 @@ public class player_atk_trigger : MonoBehaviour {
 
     public GameObject Player;
 
+    public float damage;
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        float damage = 2;
+        
+        
         if (other.CompareTag("atk"))
           { other.SendMessageUpwards("Damage",damage); }
 
   
     }
-    
-
+   
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class player : MonoBehaviour {
 
 
@@ -20,6 +21,7 @@ public class player : MonoBehaviour {
     public float y;
     public float z;
     public static bool load_settings = false;
+    
 
 	//HUD Variables
 	public Slider playerHealthSlider;
@@ -30,6 +32,7 @@ public class player : MonoBehaviour {
 
 		playerHealthSlider.maxValue = curHealth;
 		playerHealthSlider.value = curHealth;
+        GameObject.Find("attackTrigger").GetComponent<player_atk_trigger>().damage = damage;
         ///load game
         if (load_settings)
         {
@@ -41,6 +44,7 @@ public class player : MonoBehaviour {
             curHealth = PlayerPrefs.GetInt("Health", 100);
             speed = PlayerPrefs.GetFloat("Speed", 0);
             jumpPower = PlayerPrefs.GetFloat("JumpPower", 0);
+            GameObject.Find("attackTrigger").GetComponent<player_atk_trigger>().damage = damage;
         }
         ///
 
@@ -138,14 +142,16 @@ public class player : MonoBehaviour {
             other.gameObject.SetActive(false);
           
            damage += 10;
+            //   GameObject thePlayer = GameObject.Find("attackTrigger");
+            //  PlayerScript thePlayer = thePlayer.GetComponent<player_atk_trigger>();
+
+            GameObject.Find("attackTrigger").GetComponent<player_atk_trigger>().damage = damage;
+            // attacktrigger.s
         }
 
      
     }
 
-    public float get_attack_stat()
-    {
-        return damage;
-    }
+
 
 }

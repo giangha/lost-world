@@ -12629,6 +12629,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
+  attacktrigger: {fileID: 1825991866}
   playerHealthSlider: {fileID: 1160914106}
 --- !u!114 &1666826498
 MonoBehaviour:
