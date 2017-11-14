@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class player_atk_trigger : MonoBehaviour {
 
-    public int damage = 2;
+    public GameObject Player;
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("atk"))
+
+        float damage = 2;
+        if (other.CompareTag("atk"))
           { other.SendMessageUpwards("Damage",damage); }
 
   

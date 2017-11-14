@@ -137,11 +137,15 @@ public class player : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
           
-           damage += 2;
+           damage += 10;
         }
 
-
+     
     }
-    
+
+    public float get_attack_stat()
+    {
+        return damage;
+    }
 
 }
