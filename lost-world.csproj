@@ -78,8 +78,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\next_level_continuation.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick_wsettings.cs" />
+    <Compile Include="Assets\script\Mummy.cs" />
     <Compile Include="Assets\script\player.cs" />
     <Compile Include="Assets\script\player_atk_trigger.cs" />
     <Compile Include="Assets\script\playeratk.cs" />

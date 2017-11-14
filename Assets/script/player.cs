@@ -61,6 +61,15 @@ public class player : MonoBehaviour {
         if(curHealth<=0)
         { SceneManager.LoadScene(1); }
 
+        float inner_x = 96;
+      //  float outer_x = 106;
+        y = -60;
+        if(transform.position.x>=inner_x & transform.position.y<y)
+        {
+            SceneManager.LoadScene(3);
+        }
+
+
 
     }
     // Update is called once per frame
@@ -74,7 +83,7 @@ public class player : MonoBehaviour {
 
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
-//<<<<<<< HEAD
+
 
         PlayerPrefs.SetInt("Health", curHealth);
         PlayerPrefs.SetFloat("Speed", speed);
@@ -88,10 +97,7 @@ public class player : MonoBehaviour {
         PlayerPrefs.SetFloat("z", z);
         PlayerPrefs.Save();
 
-//=======
-        
-        
-//>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
+
     }
 
     public void Damage2(int dmg)
@@ -100,14 +106,14 @@ public class player : MonoBehaviour {
         curHealth -= dmg; 
 		playerHealthSlider.value = curHealth;
 	}
-//<<<<<<< HEAD
+
 
     static public void Set_continue_function(bool _load_settings)
     {
         load_settings = _load_settings;
    
     }
-//=======
+
     
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -136,8 +142,5 @@ public class player : MonoBehaviour {
 
     }
     
-    
-    
-    
-//>>>>>>> 296e7517ced27bd83d34c7e2f40856bbc9382b01
+
 }
