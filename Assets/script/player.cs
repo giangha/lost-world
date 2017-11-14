@@ -97,6 +97,7 @@ public class player : MonoBehaviour {
         PlayerPrefs.SetFloat("z", z);
         PlayerPrefs.Save();
 
+        if (transform.position.y < -75) curHealth = 0;
 
     }
 

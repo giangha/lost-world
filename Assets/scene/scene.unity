@@ -3764,6 +3764,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 95351072766826502, guid: a33c0f92f25cfaa438d6c40839ac37a0,
+        type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a33c0f92f25cfaa438d6c40839ac37a0, type: 2}
   m_IsPrefabParent: 0
@@ -4363,6 +4368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 2
   skeletonSlider: {fileID: 1258053106}
@@ -4861,6 +4867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 6
   skeletonSlider: {fileID: 918828246}
@@ -6063,6 +6070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 847698134}
@@ -6891,6 +6899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 6
   skeletonSlider: {fileID: 1659759032}
@@ -7250,6 +7259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 1676149186}
@@ -8540,6 +8550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 353031086}
@@ -10495,6 +10506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 6
   skeletonSlider: {fileID: 1177102602}
@@ -13558,6 +13570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab2d51e7acc45e34d86b8714abc80265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   speed: 50
   currentHealth: 4
   skeletonSlider: {fileID: 816842880}
@@ -13620,7 +13633,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1776934179}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

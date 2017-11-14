@@ -13,7 +13,7 @@ public class Destroy_Boundary_Exit : MonoBehaviour {
 	void Update () {
 		
 	}
-    void OnTriggerExit(Collider other)
+    void OnCollisionExit2D(Collider other)
     {
         Destroy(other.gameObject);
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Skeleton : MonoBehaviour {
-
+    public Transform target;
     public float speed = 50f;
     Animator skeletonAnimator;
     public int currentHealth = 4;
@@ -14,7 +14,7 @@ public class Skeleton : MonoBehaviour {
     public GameObject skeletonGraphic;
     bool canFlip = true;
     bool facingRight = false;
-    float flipTime = 3f;
+    float flipTime = 1f;
     float nextFlipChance = 0f;
 
     //attacking
@@ -38,7 +38,7 @@ public class Skeleton : MonoBehaviour {
     void Update() {
 
         if (Time.time > nextFlipChance) {
-            if (Random.Range(0, 10) >= 4)
+            if (Random.Range(0, 10) >= 2)
                 flipFacing();
             nextFlipChance = Time.time + flipTime;
         }
@@ -67,16 +67,24 @@ public class Skeleton : MonoBehaviour {
     void OnTriggerStay2D(Collider2D other) {
 
         if (other.tag == "Player") {
-            if (startChargingTime <= Time.time) {
-                if (!facingRight)
-                    skeletonRB.AddForce(new Vector2(-1, 0) * speed);
-                else
-                    skeletonRB.AddForce(new Vector2(1, 0) * speed);
-                skeletonAnimator.SetBool("atking", charging);  //change animation
+            if (startChargingTime <= Time.time)
+            {
+              if (!facingRight)
+               { 
+                        skeletonRB.AddForce(new Vector2(-1, 0) * speed);
+                   // target = GameObject.FindWithTag("Player").transform;
+                 //skeletonRB.MovePosition(transform.position - target.position * speed);
+                //skeletonRB.velocity = new Vector3(-speed, 0, 0);
+            }
+            else
+                skeletonRB.AddForce(new Vector2(1, 0) * speed);
+            //skeletonRB.MovePosition(transform.position + target.position * speed);
+              // skeletonRB.velocity = new Vector3(speed, 0, 0);
+            skeletonAnimator.SetBool("atking", charging);  //change animation
 
             }
         }
-
+    
     }
 
     void OnTriggerExit2D(Collider2D other) {
