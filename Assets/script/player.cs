@@ -135,8 +135,8 @@ public class player : MonoBehaviour {
         if (other.gameObject.CompareTag("sword"))
         {
             other.gameObject.SetActive(false);
-
-            damage += 2;
+          
+           damage += 2;
         }
 
 
