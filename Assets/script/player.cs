@@ -135,6 +135,7 @@ public class player : MonoBehaviour {
             other.gameObject.SetActive(false);
             
             curHealth += 10;
+            playerHealthSlider.value = curHealth;
         }
 
         if (other.gameObject.CompareTag("sword"))
