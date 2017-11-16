@@ -141,7 +141,7 @@ public class player : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
           
-           damage += 10;
+           damage += 1;
             //   GameObject thePlayer = GameObject.Find("attackTrigger");
             //  PlayerScript thePlayer = thePlayer.GetComponent<player_atk_trigger>();
 
