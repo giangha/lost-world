@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +23,8 @@ public class Skeleton : MonoBehaviour {
     float startChargingTime;
     bool charging;
     Rigidbody2D skeletonRB;
+    bool die;
+   
 
     // Use this for initialization
     void Start() {
@@ -36,16 +39,30 @@ public class Skeleton : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-
+        skeletonAnimator.SetBool("die", die); 
         if (Time.time > nextFlipChance) {
-            if (Random.Range(0, 10) >= 2)
+            if (UnityEngine.Random.Range(0, 10) >= 2)
                 flipFacing();
             nextFlipChance = Time.time + flipTime;
         }
 
         if(currentHealth <=0)
-        { Destroy(gameObject); }
+        {
+            die = true;
 
+            Stop();
+
+        
+      
+            }
+
+    }
+
+    private void Stop()
+    {
+        speed = 0;
+        canFlip = false;
+        skeletonSlider.gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -70,8 +87,10 @@ public class Skeleton : MonoBehaviour {
             if (startChargingTime <= Time.time)
             {
               if (!facingRight)
-               { 
-                        skeletonRB.AddForce(new Vector2(-1, 0) * speed);
+               {
+                    skeletonAnimator.SetFloat("speed", speed);
+
+                    skeletonRB.AddForce(new Vector2(-1, 0) * speed);
                    // target = GameObject.FindWithTag("Player").transform;
                  //skeletonRB.MovePosition(transform.position - target.position * speed);
                 //skeletonRB.velocity = new Vector3(-speed, 0, 0);
@@ -80,8 +99,8 @@ public class Skeleton : MonoBehaviour {
                 skeletonRB.AddForce(new Vector2(1, 0) * speed);
             //skeletonRB.MovePosition(transform.position + target.position * speed);
               // skeletonRB.velocity = new Vector3(speed, 0, 0);
-            skeletonAnimator.SetBool("atking", charging);  //change animation
-
+            //skeletonAnimator.SetBool("atking", charging);  //change animation
+                skeletonAnimator.SetFloat("speed", speed);
             }
         }
     
