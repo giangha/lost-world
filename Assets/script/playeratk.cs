@@ -6,10 +6,12 @@ public class playeratk : MonoBehaviour
 {
 
     private bool attacking = false;
+    private bool specialAtk = false;
     public Collider2D atkTrigger;
     private Animator amin;
     private float attackTimer = 0;
     public float attackCd = .3f;
+    public float specialAtkCD = .3f;
 
     void Awake()
     {
@@ -26,17 +28,40 @@ public class playeratk : MonoBehaviour
             attacking = true;
             attackTimer = attackCd;
             atkTrigger.enabled = true;
+         
+            
         }
 
-        if(attacking)
+        if (Input.GetKeyDown("x") && !specialAtk)
+        {
+            specialAtk = true;
+            attackTimer = specialAtkCD;
+            atkTrigger.enabled = true;
+        }
+
+        if (attacking)
         { if(attackTimer>0)
             { attackTimer -= Time.deltaTime; }
             else
             { attacking = false;
                 atkTrigger.enabled = false;
+                  
             }
         }
+
+        if (specialAtk)
+        {
+            if (attackTimer > 0)
+            { attackTimer -= Time.deltaTime; }
+            else
+            {
+                specialAtk = false;
+                atkTrigger.enabled = false;
+            }
+        }
+
         amin.SetBool("atking", attacking);
+        amin.SetBool("specialAtk",specialAtk);
 
     }
 }

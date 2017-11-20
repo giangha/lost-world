@@ -21,6 +21,7 @@ public class player : MonoBehaviour {
     public float y;
     public float z;
     public static bool load_settings = false;
+    bool die = false;
     
 
 	//HUD Variables
@@ -52,6 +53,7 @@ public class player : MonoBehaviour {
      void Update()
     {       
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        anim.SetBool("die", die);
         // direction facing
         if(Input.GetAxis("Horizontal")< -0.1f)
         { transform.localScale = new Vector3(-1, 1, 1); }
@@ -63,7 +65,10 @@ public class player : MonoBehaviour {
         { rb2d.AddForce(Vector2.up * jumpPower); }
 
         if(curHealth<=0)
-        { SceneManager.LoadScene(1); }
+        {
+            die = true;
+            Invoke("Dying",3);
+             }
 
         float inner_x = 96;
       //  float outer_x = 106;
@@ -76,6 +81,12 @@ public class player : MonoBehaviour {
 
 
     }
+
+    void Dying()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     // Update is called once per frame
     void FixedUpdate () {
         float movementHorizontal = Input.GetAxis("Horizontal");
