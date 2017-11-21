@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scene/lv2.unity
     guid: 6ab0ce89587a362439dd1cd4932f36af
+  - enabled: 1
+    path: Assets/scene/Intro.unity
+    guid: 1d2769055ddd34d9b9f02a3236d80165
