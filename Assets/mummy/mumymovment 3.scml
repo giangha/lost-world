@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="arm.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="body.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="head.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="left leg.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="right lef.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="bone_000" type="bone" w="289.737" h="10"/>
+        <obj_info name="bone_001" type="bone" w="230.829" h="10"/>
+        <obj_info name="bone_002" type="bone" w="256.856" h="10"/>
+        <obj_info name="bone_003" type="bone" w="481.309" h="10"/>
+        <obj_info name="bone_004" type="bone" w="469.602" h="10"/>
+        <animation id="0" name="ideal" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="5" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="6" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="7" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="8" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="9" key="0"/>
+                    <object_ref id="0" parent="2" timeline="4" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="1" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="0" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="498">
+                    <bone_ref id="0" timeline="5" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="6" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="7" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="8" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="9" key="0"/>
+                    <object_ref id="0" parent="2" timeline="4" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="1" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="0" key="0" z_index="4"/>
+                </key>
+                <key id="2" time="499">
+                    <bone_ref id="0" timeline="5" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="6" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="7" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="8" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="9" key="0"/>
+                    <object_ref id="0" parent="2" timeline="4" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="1" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="0" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-137.626245" y="-633.511958" angle="112.982991"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="body">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-534.831844" y="-41.457578" angle="38.233825"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="head">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="303.099379" y="-436.897589" angle="160.034866"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="left leg">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-329.129366" y="-760.75946" angle="103.828651"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="right lef">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-174.01596" y="-749.79796" angle="115.016893"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-481.034483" y="270.689655" angle="321.766175"/>
+                </key>
+                <key id="1" time="499">
+                    <bone x="-481.034483" y="270.689655" angle="317.921407"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="1" name="bone_001" object_type="bone">
+                <key id="0">
+                    <bone x="287.808417" y="-5.909655" angle="294.405174"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="304.408141"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="217.549183" y="-39.315623" angle="283.216932"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="217.549183" y="-39.315623" angle="287.64844"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="108.466797" y="-6.730441" angle="285.250834"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-14.897256" y="-11.737232" angle="238.198959"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="1" name="entity_001">
+        <obj_info name="bone_000" type="bone" w="289.737" h="10"/>
+        <obj_info name="bone_001" type="bone" w="230.829" h="10"/>
+        <obj_info name="bone_002" type="bone" w="256.856" h="10"/>
+        <obj_info name="bone_003" type="bone" w="481.309" h="10"/>
+        <obj_info name="bone_004" type="bone" w="469.602" h="10"/>
+        <animation id="0" name="running" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="250">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="2" time="251">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="1"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="3" time="499">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="2"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="2"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="2"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="4" time="708">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="3"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="3"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="2"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="5" time="709">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="3"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="3"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="3"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="3"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="6" time="1000">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="4"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="4"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="4"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="3"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-481.034483" y="270.689655" angle="321.766175"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="294.405174"/>
+                </key>
+                <key id="1" time="250">
+                    <bone x="287.808417" y="-5.909655" angle="256.78457"/>
+                </key>
+                <key id="2" time="499" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="14.571583"/>
+                </key>
+                <key id="3" time="708">
+                    <bone x="287.808417" y="-5.909655" angle="252.930251"/>
+                </key>
+                <key id="4" time="1000" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="326.49106"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="217.549183" y="-39.315623" angle="283.216932"/>
+                </key>
+                <key id="1" time="250" spin="-1">
+                    <bone x="217.549183" y="-39.315623" angle="356.457379"/>
+                </key>
+                <key id="2" time="499">
+                    <bone x="217.549183" y="-39.315623" angle="267.219181"/>
+                </key>
+                <key id="3" time="708" spin="-1">
+                    <bone x="217.549183" y="-39.315623" angle="10.659719"/>
+                </key>
+                <key id="4" time="1000">
+                    <bone x="217.549183" y="-39.315623" angle="277.709292"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0">
+                    <bone x="108.466797" y="-6.730441" angle="285.250834"/>
+                </key>
+                <key id="1" time="250" spin="-1">
+                    <bone x="108.466797" y="-6.730441" angle="34.000848"/>
+                </key>
+                <key id="2" time="499">
+                    <bone x="108.466797" y="-6.730441" angle="31.18693"/>
+                </key>
+                <key id="3" time="709" spin="-1">
+                    <bone x="108.466797" y="-6.730441" angle="46.404387"/>
+                </key>
+                <key id="4" time="1000" spin="-1">
+                    <bone x="108.466797" y="-6.730441" angle="37.882951"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="238.198959"/>
+                </key>
+                <key id="1" time="251" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="221.568487"/>
+                </key>
+                <key id="2" time="499" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="219.767699"/>
+                </key>
+                <key id="3" time="709">
+                    <bone x="-14.897256" y="-11.737232" angle="215.196176"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="right lef">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-174.01596" y="-749.79796" angle="115.016893"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="head">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="303.099379" y="-436.897589" angle="160.034866"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="body">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-534.831844" y="-41.457578" angle="38.233825"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="left leg">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-329.129366" y="-760.75946" angle="103.828651"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-137.626245" y="-633.511958" angle="112.982991"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="2" name="entity_002">
+        <obj_info name="bone_000" type="bone" w="289.737" h="10"/>
+        <obj_info name="bone_001" type="bone" w="230.829" h="10"/>
+        <obj_info name="bone_002" type="bone" w="256.856" h="10"/>
+        <obj_info name="bone_003" type="bone" w="481.309" h="10"/>
+        <obj_info name="bone_004" type="bone" w="469.602" h="10"/>
+        <animation id="0" name="atk" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="499">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="1"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="2" time="530">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="3" time="572">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="3"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="4" time="613">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="4"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="5" time="664">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="5"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-481.034483" y="270.689655" angle="321.766175"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0">
+                    <bone x="287.808417" y="-5.909655" angle="294.405174"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="2.702354"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="217.549183" y="-39.315623" angle="283.216932"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="217.549183" y="-39.315623" angle="357.177566"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0">
+                    <bone x="108.466797" y="-6.730441" angle="285.250834"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="108.466797" y="-6.730441" angle="52.410724"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="238.198959"/>
+                </key>
+                <key id="1" time="499" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="215.796737"/>
+                </key>
+                <key id="2" time="530">
+                    <bone x="-14.897256" y="-11.737232" angle="204.262071"/>
+                </key>
+                <key id="3" time="572" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="219.461197"/>
+                </key>
+                <key id="4" time="613">
+                    <bone x="-14.897256" y="-11.737232" angle="198.483062"/>
+                </key>
+                <key id="5" time="664">
+                    <bone x="-14.897256" y="-11.737232" angle="222.628431"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="right lef">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-174.01596" y="-749.79796" angle="115.016893"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="head">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="303.099379" y="-436.897589" angle="160.034866"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="body">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-534.831844" y="-41.457578" angle="38.233825"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="left leg">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-329.129366" y="-760.75946" angle="103.828651"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-137.626245" y="-633.511958" angle="112.982991"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="3" name="entity_003">
+        <obj_info name="bone_000" type="bone" w="289.737" h="10"/>
+        <obj_info name="bone_001" type="bone" w="230.829" h="10"/>
+        <obj_info name="bone_002" type="bone" w="256.856" h="10"/>
+        <obj_info name="bone_003" type="bone" w="481.309" h="10"/>
+        <obj_info name="bone_004" type="bone" w="469.602" h="10"/>
+        <animation id="0" name="die" length="1000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="0" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="193">
+                    <bone_ref id="0" timeline="0" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="1"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="2" time="405">
+                    <bone_ref id="0" timeline="0" key="2"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="2"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="2"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="0"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="3" time="572">
+                    <bone_ref id="0" timeline="0" key="3"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="2"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="2"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="1"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="1"/>
+                    <object_ref id="0" parent="2" timeline="5" key="0" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="0" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="0" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="0" z_index="4"/>
+                </key>
+                <key id="4" time="676">
+                    <bone_ref id="0" timeline="0" key="4"/>
+                    <bone_ref id="1" parent="0" timeline="1" key="3"/>
+                    <bone_ref id="2" parent="0" timeline="2" key="3"/>
+                    <bone_ref id="3" parent="0" timeline="3" key="2"/>
+                    <bone_ref id="4" parent="0" timeline="4" key="2"/>
+                    <object_ref id="0" parent="2" timeline="5" key="1" z_index="0"/>
+                    <object_ref id="1" parent="4" timeline="6" key="1" z_index="1"/>
+                    <object_ref id="2" parent="0" timeline="7" key="1" z_index="2"/>
+                    <object_ref id="3" parent="1" timeline="8" key="1" z_index="3"/>
+                    <object_ref id="4" parent="3" timeline="9" key="1" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-481.034483" y="270.689655" angle="321.766175"/>
+                </key>
+                <key id="1" time="193" spin="0">
+                    <bone x="-533.534483" y="225.689655" angle="321.766175"/>
+                </key>
+                <key id="2" time="405">
+                    <bone x="-568.534483" y="163.189655" angle="321.766175"/>
+                </key>
+                <key id="3" time="572" spin="-1">
+                    <bone x="-611.716301" y="32.432079" angle="343.844036"/>
+                </key>
+                <key id="4" time="676" spin="-1">
+                    <bone x="-566.261756" y="-246.3558" angle="339.63394"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="bone_001" object_type="bone">
+                <key id="0">
+                    <bone x="287.808417" y="-5.909655" angle="294.405174"/>
+                </key>
+                <key id="1" time="193">
+                    <bone x="287.808417" y="-5.909655" angle="336.839409"/>
+                </key>
+                <key id="2" time="405" spin="0">
+                    <bone x="287.808417" y="-5.909655" angle="21.31126"/>
+                </key>
+                <key id="3" time="676" spin="-1">
+                    <bone x="287.808417" y="-5.909655" angle="21.31126"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="bone_002" object_type="bone">
+                <key id="0">
+                    <bone x="217.549183" y="-39.315623" angle="283.216932"/>
+                </key>
+                <key id="1" time="193">
+                    <bone x="217.549183" y="-39.315623" angle="330.478327"/>
+                </key>
+                <key id="2" time="405" spin="0">
+                    <bone x="217.549183" y="-39.315623" angle="13.288888"/>
+                </key>
+                <key id="3" time="676" spin="-1">
+                    <bone x="217.549183" y="-39.315623" angle="13.288888"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="108.466797" y="-6.730441" angle="285.250834"/>
+                </key>
+                <key id="1" time="193" spin="0">
+                    <bone x="108.466797" y="-6.730441" angle="205.727398"/>
+                </key>
+                <key id="2" time="676">
+                    <bone x="108.466797" y="-6.730441" angle="205.727398"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="-14.897256" y="-11.737232" angle="238.198959"/>
+                </key>
+                <key id="1" time="572" spin="0">
+                    <bone x="-14.897256" y="-11.737232" angle="215.899686"/>
+                </key>
+                <key id="2" time="676">
+                    <bone x="-14.897256" y="-11.737232" angle="215.899686"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="right lef">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-174.01596" y="-749.79796" angle="115.016893"/>
+                </key>
+                <key id="1" time="676" spin="0">
+                    <object folder="0" file="4" x="-174.01596" y="-749.79796" angle="115.016893"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="head">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="303.099379" y="-436.897589" angle="160.034866"/>
+                </key>
+                <key id="1" time="676" spin="0">
+                    <object folder="0" file="2" x="303.099379" y="-436.897589" angle="160.034866"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="body">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-534.831844" y="-41.457578" angle="38.233825"/>
+                </key>
+                <key id="1" time="676" spin="0">
+                    <object folder="0" file="1" x="-534.831844" y="-41.457578" angle="38.233825"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="left leg">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-329.129366" y="-760.75946" angle="103.828651"/>
+                </key>
+                <key id="1" time="676" spin="0">
+                    <object folder="0" file="3" x="-329.129366" y="-760.75946" angle="103.828651"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-137.626245" y="-633.511958" angle="112.982991"/>
+                </key>
+                <key id="1" time="676" spin="0">
+                    <object folder="0" file="0" x="-137.626245" y="-633.511958" angle="112.982991"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

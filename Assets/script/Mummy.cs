@@ -22,6 +22,7 @@ public class Mummy : MonoBehaviour {
 	float startChargingTime;
 	bool attacking;
 	Rigidbody2D mummyRB;
+    bool die = false;
 
 	// Use this for initialization
 	void Start() {
@@ -36,7 +37,7 @@ public class Mummy : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-
+        mummyAnimator.SetBool("die", die);
 		if (Time.time > nextFlipChance) {
 			if (Random.Range(0, 10) >= 2)
 				flipFacing();
@@ -46,11 +47,29 @@ public class Mummy : MonoBehaviour {
 		mummyAnimator.SetFloat ("speed", Mathf.Abs (mummyRB.velocity.x));
 
 		if(currentHealth <=0)
-		{ Destroy(gameObject); }
+		{
+            die = true;
+            Stop();
+        }
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
+    private void Stop()
+    {
+        speed = 0;
+        canFlip = false;
+        mummySlider.gameObject.SetActive(false);
+        Invoke("gone", 2);
+
+
+    }
+
+    private void gone()
+    {
+        Destroy(mummyGraphic);
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
 
 		if (other.tag == "Player") {
 			if (facingRight && other.transform.position.x < transform.position.x)

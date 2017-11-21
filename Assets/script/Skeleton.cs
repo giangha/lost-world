@@ -76,11 +76,15 @@ public class Skeleton : MonoBehaviour {
         speed = 0;
         canFlip = false;
         skeletonSlider.gameObject.SetActive(false);
-        
-        //skeletonRB.isKinematic = true;
-      
+        Invoke("gone", 2);
+
+
     }
 
+    private void gone()
+    {
+        Destroy(skeletonGraphic);
+    }
     void OnTriggerEnter2D(Collider2D other) {
 
         if (other.tag == "Player") {

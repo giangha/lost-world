@@ -221,13 +221,16 @@
   <ItemGroup>
     <Compile Include="Assets\Destroy_Boundary_Exit.cs" />
     <Compile Include="Assets\next_level_continuation.cs" />
+    <Compile Include="Assets\script\attacksound.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick_wsettings.cs" />
     <Compile Include="Assets\script\Mummy.cs" />
     <Compile Include="Assets\script\player.cs" />
     <Compile Include="Assets\script\player_atk_trigger.cs" />
     <Compile Include="Assets\script\playeratk.cs" />
+    <Compile Include="Assets\script\PlayonSpaceBar.cs" />
     <Compile Include="Assets\script\QuitOnClick.cs" />
+    <Compile Include="Assets\script\scrollz.cs" />
     <Compile Include="Assets\script\Skeleton.cs" />
     <Compile Include="Assets\script\skeleton_atk.cs" />
     <Compile Include="Assets\Spriter2UnityDX\Runtime\EntityRenderer.cs" />
