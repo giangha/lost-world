@@ -62,7 +62,11 @@ public class player : MonoBehaviour {
         { transform.localScale = new Vector3(1, 1, 1); }
 
         if(Input.GetButtonDown("Jump"))
-        { rb2d.AddForce(Vector2.up * jumpPower); }
+        { rb2d.AddForce(Vector2.up * jumpPower);
+            
+
+
+        }
 
         if(curHealth<=0)
         {

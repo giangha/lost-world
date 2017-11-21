@@ -60,6 +60,7 @@
      <Compile Include="Assets\script\player.cs" />
      <Compile Include="Assets\script\player_atk_trigger.cs" />
      <Compile Include="Assets\script\playeratk.cs" />
+     <Compile Include="Assets\script\PlayonSpaceBar.cs" />
      <Compile Include="Assets\script\QuitOnClick.cs" />
      <Compile Include="Assets\script\scrollz.cs" />
      <Compile Include="Assets\script\Skeleton.cs" />
