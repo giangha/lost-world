@@ -58,6 +58,9 @@ public class Skeleton : MonoBehaviour {
 
         if(currentHealth <=0)
         {
+            AudioSource die2 = GetComponent<AudioSource>();
+            die2.Play();
+           
             die = true;
 
             Stop();
@@ -73,6 +76,7 @@ public class Skeleton : MonoBehaviour {
         speed = 0;
         canFlip = false;
         skeletonSlider.gameObject.SetActive(false);
+        
         //skeletonRB.isKinematic = true;
       
     }

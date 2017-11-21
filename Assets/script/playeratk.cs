@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ public class playeratk : MonoBehaviour
     private Animator amin;
     private float attackTimer = 0;
     public float attackCd = .3f;
-    public float specialAtkCD = .3f;
+    public float specialAtkCD = 1.9f;
 
     void Awake()
     {
@@ -28,16 +28,20 @@ public class playeratk : MonoBehaviour
             attacking = true;
             attackTimer = attackCd;
             atkTrigger.enabled = true;
+            AudioSource splash = GetComponent<AudioSource>();
+            splash.Play();
          
             
         }
+        
+        
 
         if (Input.GetKeyDown("x") && !specialAtk)
         {
             specialAtk = true;
             attackTimer = specialAtkCD;
             atkTrigger.enabled = true;
-        }
+                    }
 
         if (attacking)
         { if(attackTimer>0)
