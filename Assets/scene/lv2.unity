@@ -5018,7 +5018,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
-  playerHealthSlider: {fileID: 0}
+  playerHealthSlider: {fileID: 1925543772}
 --- !u!61 &1104993113
 BoxCollider2D:
   m_ObjectHideFlags: 0
