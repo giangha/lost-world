@@ -13,7 +13,7 @@ public class Skeleton : MonoBehaviour {
     public Collider2D atkTrigger;
 
     //animation
-    private float attackTimer = 0;
+    private float attackTimer = 1;
     public float attackCd = .3f;
     private bool attacking = false;
 
@@ -32,12 +32,15 @@ public class Skeleton : MonoBehaviour {
     bool die;
     bool atk;
 
-  
+    private void Awake()
+    {
+        atkTrigger.enabled = false;
+    }
 
 
     // Use this for initialization
     void Start() {
-
+        
         skeletonAnimator = GetComponent<Animator>();
         skeletonRB = GetComponent<Rigidbody2D>();
         skeletonGraphic = this.gameObject;
@@ -48,6 +51,9 @@ public class Skeleton : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+      
+
         skeletonAnimator.SetFloat("speed", Mathf.Abs(skeletonRB.velocity.x));
         skeletonAnimator.SetBool("die", die);
         skeletonAnimator.SetBool("atking", atk);
@@ -87,7 +93,7 @@ public class Skeleton : MonoBehaviour {
         Destroy(skeletonGraphic);
     }
     void OnTriggerEnter2D(Collider2D other) {
-
+        atkTrigger.enabled = true;
         if (other.tag == "Player") {
             if (facingRight && other.transform.position.x < transform.position.x)
                 flipFacing();
@@ -103,7 +109,7 @@ public class Skeleton : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D other) {
-
+        
         if (other.tag == "Player") {
            
             if (startChargingTime <= Time.time)
@@ -111,7 +117,7 @@ public class Skeleton : MonoBehaviour {
                 atk = true;
               if (!facingRight)
                {
-                    //skeletonAnimator.SetFloat("speed", speed);
+                    
 
                     skeletonRB.AddForce(new Vector2(-1, 0) * speed);
                     // target = GameObject.FindWithTag("Player").transform;
