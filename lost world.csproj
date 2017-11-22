@@ -222,6 +222,7 @@
     <Compile Include="Assets\Destroy_Boundary_Exit.cs" />
     <Compile Include="Assets\next_level_continuation.cs" />
     <Compile Include="Assets\script\attacksound.cs" />
+    <Compile Include="Assets\script\ballControl.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick.cs" />
     <Compile Include="Assets\script\LoadSceneOnClick_wsettings.cs" />
     <Compile Include="Assets\script\Mummy.cs" />

@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class playeratk : MonoBehaviour
 {
-
+    
     private bool attacking = false;
     private bool specialAtk = false;
     public Collider2D atkTrigger;
+    public Collider2D atkTrigger2;
     private Animator amin;
     private float attackTimer = 0;
     public float attackCd = .3f;
     public float specialAtkCD = 1.9f;
+    
 
     void Awake()
     {
         amin = gameObject.GetComponent<Animator>();
         atkTrigger.enabled = false;
+        atkTrigger2.enabled = false;
     }
 
 
@@ -37,10 +40,12 @@ public class playeratk : MonoBehaviour
         
 
         if (Input.GetKeyDown("x") && !specialAtk)
-        {
+        {   
             specialAtk = true;
             attackTimer = specialAtkCD;
-            atkTrigger.enabled = true;
+            Invoke("delaySpecialAtk", 1.9f);
+         
+          
                     }
 
         if (attacking)
@@ -60,7 +65,7 @@ public class playeratk : MonoBehaviour
             else
             {
                 specialAtk = false;
-                atkTrigger.enabled = false;
+               
             }
         }
 
@@ -68,4 +73,16 @@ public class playeratk : MonoBehaviour
         amin.SetBool("specialAtk",specialAtk);
 
     }
+
+    void delaySpecialAtk()
+    {   
+        atkTrigger2.enabled = true;
+        Invoke("delayDmg", .3f);
+    }
+
+    void delayDmg()
+    {
+        atkTrigger2.enabled = false;
+    }
+   
 }
