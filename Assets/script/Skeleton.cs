@@ -48,6 +48,7 @@ public class Skeleton : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        skeletonAnimator.SetFloat("speed", Mathf.Abs(skeletonRB.velocity.x));
         skeletonAnimator.SetBool("die", die);
         skeletonAnimator.SetBool("atking", atk);
         if (Time.time > nextFlipChance) {
@@ -104,12 +105,13 @@ public class Skeleton : MonoBehaviour {
     void OnTriggerStay2D(Collider2D other) {
 
         if (other.tag == "Player") {
-            atk = true;
+           
             if (startChargingTime <= Time.time)
             {
+                atk = true;
               if (!facingRight)
                {
-                    skeletonAnimator.SetFloat("speed", speed);
+                    //skeletonAnimator.SetFloat("speed", speed);
 
                     skeletonRB.AddForce(new Vector2(-1, 0) * speed);
                     // target = GameObject.FindWithTag("Player").transform;
@@ -122,7 +124,7 @@ public class Skeleton : MonoBehaviour {
             //skeletonRB.MovePosition(transform.position + target.position * speed);
               // skeletonRB.velocity = new Vector3(speed, 0, 0);
             //skeletonAnimator.SetBool("atking", charging);  //change animation
-                skeletonAnimator.SetFloat("speed", speed);
+               // skeletonAnimator.SetFloat("speed", speed);
             }
         }
     
@@ -131,7 +133,7 @@ public class Skeleton : MonoBehaviour {
     
 
     void OnTriggerExit2D(Collider2D other) {
-
+        atk = false;
         if (other.tag == "Player") {
             canFlip = true;
             charging = false;
