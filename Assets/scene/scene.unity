@@ -7569,6 +7569,14 @@ Prefab:
       propertyPath: m_Size.x
       value: 1.0355587
       objectReference: {fileID: 0}
+    - target: {fileID: 1983646157319916, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695, type: 2}
+      propertyPath: m_TagString
+      value: playeratk
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983646157319916, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695, type: 2}
   m_IsPrefabParent: 0
@@ -8982,7 +8990,7 @@ GameObject:
   - component: {fileID: 1569876286}
   - component: {fileID: 1569876288}
   - component: {fileID: 1569876287}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: skeleton_atk
   m_TagString: skeleton_atk
   m_Icon: {fileID: 0}
