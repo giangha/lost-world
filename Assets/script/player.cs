@@ -12,7 +12,7 @@ public class player : MonoBehaviour {
     public float speed = 50f;
     public float jumpPower = 150f;
     public float maxspeed = 3;
-    public int curHealth = 100;
+    public int curHealth;
   //  public float jumpPower = 150f;
     public bool grounded;
     private Rigidbody2D rb2d;
@@ -22,33 +22,37 @@ public class player : MonoBehaviour {
     public float z;
     public static bool load_settings = false;
     bool die = false;
-    
+    int current_scene_index;
 
-	//HUD Variables
-	public Slider playerHealthSlider;
+    //HUD Variables
+    public Slider playerHealthSlider;
 
     void Start () {
-        //curHealth = 100;
+        curHealth = 20;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
 
 		playerHealthSlider.maxValue = curHealth;
-		playerHealthSlider.value = curHealth;
+		
         GameObject.Find("attackTrigger").GetComponent<player_atk_trigger>().damage = damage;
+        current_scene_index = SceneManager.GetActiveScene().buildIndex;
         ///load game
-        if (load_settings)
+        if (load_settings || PlayerPrefs.GetInt("Save_Scene", 0)==1)
         {
             x = PlayerPrefs.GetFloat("x");
             y = PlayerPrefs.GetFloat("y");
             z = PlayerPrefs.GetFloat("z");
-            Vector3 starting_position = new Vector3(x, y, z);
-            transform.position = starting_position;
+            if (current_scene_index == PlayerPrefs.GetInt("Scene_Index", current_scene_index))
+            {
+                Vector3 starting_position = new Vector3(x, y, z);
+                transform.position = starting_position;
+            }
             curHealth = PlayerPrefs.GetInt("Health", 100);
             speed = PlayerPrefs.GetFloat("Speed", 0);
             jumpPower = PlayerPrefs.GetFloat("JumpPower", 0);
             GameObject.Find("attackTrigger").GetComponent<player_atk_trigger>().damage = damage;
         }
-        ///
+        playerHealthSlider.value = curHealth;
 
     }
      void Update()
@@ -69,25 +73,31 @@ public class player : MonoBehaviour {
 
         }
 
-        if(curHealth<=0)
-        {
-            die = true;
-            Invoke("Dying",3);
-             }
 
-        int current_scene_index = SceneManager.GetActiveScene().buildIndex;
-        if (transform.position.x>=96 & transform.position.y<-60 & current_scene_index==4)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(0);
         }
+
         if (transform.position.x <= -72 & transform.position.y < -2 & current_scene_index == 3)
         {
+            PlayerPrefs.SetInt("Save_Scene", 1);
+            PlayerPrefs.Save();
             SceneManager.LoadScene(4);
         }
+
+        if (transform.position.x>=96 & transform.position.y<-60 & current_scene_index==4)
+        {
+            PlayerPrefs.SetInt("Save_Scene", 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene(5);
+        }
+
 
 
 
     }
+
 
     void Dying()
     {
@@ -106,8 +116,9 @@ public class player : MonoBehaviour {
         if (rb2d.velocity.x < -maxspeed)
         { rb2d.velocity = new Vector2(-maxspeed, rb2d.velocity.y); }
 
-
+        playerHealthSlider.value = curHealth;
         PlayerPrefs.SetInt("Health", curHealth);
+        PlayerPrefs.SetInt("Scene_Index", current_scene_index);
         PlayerPrefs.SetFloat("Speed", speed);
         PlayerPrefs.SetFloat("JumpPower", jumpPower);
 
