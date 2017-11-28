@@ -10,7 +10,7 @@ public class player : MonoBehaviour {
 
     public float damage = 2;
     public float speed = 50f;
-    public float jumpPower = 150f;
+    public float jumpPower = 50f;
     public float maxspeed = 3;
     public int curHealth;
   //  public float jumpPower = 150f;
@@ -68,8 +68,6 @@ public class player : MonoBehaviour {
 
         if(Input.GetButtonDown("Jump"))
         { rb2d.AddForce(Vector2.up * jumpPower);
-            
-
 
         }
 
