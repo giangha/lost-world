@@ -79,7 +79,7 @@ public class player : MonoBehaviour {
             SceneManager.LoadScene(0);
         }
 
-        if (transform.position.x <= -72 & transform.position.y < -2 & current_scene_index == 3)
+        if (transform.position.x <= -108 & transform.position.y < -2 & current_scene_index == 3)
         {
             PlayerPrefs.SetInt("Save_Scene", 1);
             PlayerPrefs.Save();

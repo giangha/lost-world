@@ -1333,6 +1333,80 @@ Transform:
   m_Father: {fileID: 2113577701}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &83729607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 83729608}
+  - component: {fileID: 83729610}
+  - component: {fileID: 83729609}
+  m_Layer: 5
+  m_Name: Text (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &83729608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83729607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -437, y: 14, z: 0}
+  m_LocalScale: {x: 0.75001806, y: 0.75001806, z: 0.09996721}
+  m_Children: []
+  m_Father: {fileID: 1710823074}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -437, y: 14}
+  m_SizeDelta: {x: 256.4, y: 98}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &83729609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83729607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.86166346, b: 0.08823532, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5f86758e42264a14db6723ec765673f9, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: If things get too difficult you can press ESC and Run away from the game....
+--- !u!222 &83729610
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83729607}
 --- !u!1 &119548773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4223,6 +4297,81 @@ CircleCollider2D:
   m_Offset: {x: -0.025383946, y: 0}
   serializedVersion: 2
   m_Radius: 0.784284
+--- !u!1 &405739381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 405739384}
+  - component: {fileID: 405739383}
+  - component: {fileID: 405739382}
+  m_Layer: 5
+  m_Name: Text (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &405739382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405739381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.86166346, b: 0.08823532, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5f86758e42264a14db6723ec765673f9, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Looks like you are ready to face your challenges angel. Go forth and may
+    you have wind beneath your wings. '
+--- !u!222 &405739383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405739381}
+--- !u!224 &405739384
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405739381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -86.25068, y: 7.840973, z: 90}
+  m_LocalScale: {x: 0.113639995, y: 0.113639995, z: 0.01136}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -86.25068, y: 7.840971}
+  m_SizeDelta: {x: 163.2, y: 128.6}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &423280908
 GameObject:
   m_ObjectHideFlags: 0
@@ -8928,7 +9077,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896169753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -514, y: 51, z: 0}
+  m_LocalPosition: {x: -831, y: 68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 1710823074}
@@ -8936,7 +9085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -514, y: 51}
+  m_AnchoredPosition: {x: -831, y: 68}
   m_SizeDelta: {x: 163.2, y: 128.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896169755
@@ -12506,11 +12655,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4472017308822582, guid: f559c97b56fffd2439ed17de607e5ebf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -74.5
+      value: -111.25
       objectReference: {fileID: 0}
     - target: {fileID: 4472017308822582, guid: f559c97b56fffd2439ed17de607e5ebf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.59
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4472017308822582, guid: f559c97b56fffd2439ed17de607e5ebf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15632,7 +15781,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1589858843}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 434, y: -39, z: 0}
+  m_LocalPosition: {x: 468.90002, y: -27.5, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.09996721}
   m_Children: []
   m_Father: {fileID: 1710823074}
@@ -15640,8 +15789,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 434, y: -39}
-  m_SizeDelta: {x: 163.2, y: 128.6}
+  m_AnchoredPosition: {x: 468.9, y: -27.5}
+  m_SizeDelta: {x: 256.4, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589858845
 MonoBehaviour:
@@ -15675,7 +15824,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Can you handle 2 enemies?
+  m_Text: Can you handle 2 enemies? If things get too difficult Press "x" to use your
+    special power. But Be careful as you cant use it too often!
 --- !u!222 &1589858846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17287,6 +17437,7 @@ RectTransform:
   - {fileID: 1093273928}
   - {fileID: 896169754}
   - {fileID: 1589858844}
+  - {fileID: 83729608}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

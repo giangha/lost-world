@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 39991993}
   m_Layer: 0
   m_Name: Cave_Spike11 (15)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 102274360}
   m_Layer: 0
   m_Name: Cave_Spike11 (4)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2453,7 +2453,7 @@ GameObject:
   - component: {fileID: 565795224}
   m_Layer: 0
   m_Name: Cave_Spike11 (8)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 678463349}
   m_Layer: 0
   m_Name: Cave_Spike11 (7)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3994,7 +3994,7 @@ GameObject:
   - component: {fileID: 764479897}
   m_Layer: 0
   m_Name: Cave_Spike11
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4166,7 +4166,7 @@ GameObject:
   - component: {fileID: 781484969}
   m_Layer: 0
   m_Name: Cave_Spike11 (6)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4901,7 +4901,7 @@ GameObject:
   - component: {fileID: 957307841}
   m_Layer: 0
   m_Name: Cave_Spike11 (9)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,7 +5763,7 @@ GameObject:
   - component: {fileID: 1060777621}
   m_Layer: 0
   m_Name: Cave_Spike11 (14)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7393,7 +7393,7 @@ GameObject:
   - component: {fileID: 1334185206}
   m_Layer: 0
   m_Name: Cave_Spike11 (12)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8241,7 +8241,7 @@ GameObject:
   - component: {fileID: 1545750600}
   m_Layer: 0
   m_Name: Cave_Spike11 (11)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8808,7 +8808,7 @@ GameObject:
   - component: {fileID: 1694113147}
   m_Layer: 0
   m_Name: Cave_Spike11 (13)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9519,7 +9519,7 @@ GameObject:
   - component: {fileID: 1829117154}
   m_Layer: 0
   m_Name: Cave_Spike11 (5)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9691,7 +9691,7 @@ GameObject:
   - component: {fileID: 1890447993}
   m_Layer: 0
   m_Name: Cave_Spike11 (2)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11196,7 +11196,7 @@ GameObject:
   - component: {fileID: 2049881943}
   m_Layer: 0
   m_Name: Cave_Spike11 (3)
-  m_TagString: Untagged
+  m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
