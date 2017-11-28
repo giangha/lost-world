@@ -12,11 +12,14 @@ EditorBuildSettings:
     path: Assets/scene/menu_scene_death.unity
     guid: 36086b9182205304f8f09228ad5562c8
   - enabled: 1
+    path: Assets/scene/Intro.unity
+    guid: 1d2769055ddd34d9b9f02a3236d80165
+  - enabled: 1
+    path: Assets/scene/training scene.unity
+    guid: 2855455c60c61114a8fddbb8383cefaa
+  - enabled: 1
     path: Assets/scene/scene.unity
     guid: 43851a8ece233e84c808b07670f617a8
   - enabled: 1
     path: Assets/scene/lv2.unity
     guid: 6ab0ce89587a362439dd1cd4932f36af
-  - enabled: 1
-    path: Assets/scene/Intro.unity
-    guid: 1d2769055ddd34d9b9f02a3236d80165

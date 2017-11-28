@@ -75,12 +75,14 @@ public class player : MonoBehaviour {
             Invoke("Dying",3);
              }
 
-        float inner_x = 96;
-      //  float outer_x = 106;
-        y = -60;
-        if(transform.position.x>=inner_x & transform.position.y<y)
+        int current_scene_index = SceneManager.GetActiveScene().buildIndex;
+        if (transform.position.x>=96 & transform.position.y<-60 & current_scene_index==4)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
+        }
+        if (transform.position.x <= -72 & transform.position.y < -2 & current_scene_index == 3)
+        {
+            SceneManager.LoadScene(4);
         }
 
 
