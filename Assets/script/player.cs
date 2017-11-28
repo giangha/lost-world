@@ -28,7 +28,7 @@ public class player : MonoBehaviour {
 	public Slider playerHealthSlider;
 
     void Start () {
-        curHealth = 100;
+        //curHealth = 100;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
 
