@@ -13,6 +13,7 @@ TagManager:
   - sword
   - spike
   - skeleton_atk
+  - mummy_atk
   layers:
   - Default
   - TransparentFX

@@ -7542,7 +7542,7 @@ Prefab:
     - target: {fileID: 114794912721429346, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: jumpPower
-      value: 200
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 50681103881519012, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
@@ -9055,8 +9055,8 @@ GameObject:
   - component: {fileID: 1602714289}
   - component: {fileID: 1602714290}
   m_Layer: 0
-  m_Name: attack
-  m_TagString: Untagged
+  m_Name: mummy_attack
+  m_TagString: mummy_atk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

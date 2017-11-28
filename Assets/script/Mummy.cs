@@ -59,6 +59,7 @@ public class Mummy : MonoBehaviour {
         speed = 0;
         canFlip = false;
         mummySlider.gameObject.SetActive(false);
+        GameObject.Find("mummy_atk").GetComponent<mummy_atk>().damage = 0;
         Invoke("gone", 2);
 
 
