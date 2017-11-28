@@ -10,6 +10,7 @@ public class Skeleton : MonoBehaviour {
     private Animator skeletonAnimator;
     public int currentHealth = 4;
 	public Slider skeletonSlider;
+    public GameObject sword;
    // public Collider2D atkTrigger;
 
     //animation
@@ -82,8 +83,10 @@ public class Skeleton : MonoBehaviour {
     {
         speed = 0;
         canFlip = false;
+
+        sword.gameObject.SetActive(false);
         skeletonSlider.gameObject.SetActive(false);
-        GameObject.Find("skeleton_atk").GetComponent<skeleton_atk>().damage = 0;
+        //GameObject.Find("skeleton_atk").GetComponent<skeleton_atk>().damage = 0;
         Invoke("gone", 2);
 
 
