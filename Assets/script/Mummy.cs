@@ -9,6 +9,7 @@ public class Mummy : MonoBehaviour {
 	Animator mummyAnimator;
 	public int currentHealth = 4;
 	public Slider mummySlider;
+    public GameObject head_attack;
 
 	//facing
 	public GameObject mummyGraphic;
@@ -59,7 +60,8 @@ public class Mummy : MonoBehaviour {
         speed = 0;
         canFlip = false;
         mummySlider.gameObject.SetActive(false);
-        GameObject.Find("mummy_atk").GetComponent<mummy_atk>().damage = 0;
+        head_attack.gameObject.SetActive(false);
+        //GameObject.Find("mummy_atk").GetComponent<mummy_atk>().damage = 0;
         Invoke("gone", 2);
 
 

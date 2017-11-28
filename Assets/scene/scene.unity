@@ -5642,6 +5642,7 @@ MonoBehaviour:
   speed: 5
   currentHealth: 16
   mummySlider: {fileID: 723383647}
+  head_attack: {fileID: 1602714287}
   mummyGraphic: {fileID: 0}
   chargeTime: 1
 --- !u!61 &1011523852
