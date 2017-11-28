@@ -28,6 +28,7 @@ public class player : MonoBehaviour {
 	public Slider playerHealthSlider;
 
     void Start () {
+        curHealth = 100;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
 
@@ -134,7 +135,18 @@ public class player : MonoBehaviour {
    
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.CompareTag("spike"))
+        {
+            curHealth -= 5;
+            playerHealthSlider.value = curHealth;
+            //transform.localScale = new Vector3(1, -5, 1);
+            // rb2d.AddForce(Vector2.down * -100);
+
+        }
+           
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check the provided Collider2D parameter other to see if it is tagged "PickUp", if it is...

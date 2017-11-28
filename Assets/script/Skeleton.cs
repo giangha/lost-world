@@ -111,22 +111,23 @@ public class Skeleton : MonoBehaviour {
     void OnTriggerStay2D(Collider2D other) {
         
         if (other.tag == "Player") {
-           
+            atk = true;
             if (startChargingTime <= Time.time)
             {
-                atk = true;
+                
               if (!facingRight)
                {
-                    
 
-                    skeletonRB.AddForce(new Vector2(-1, 0) * speed);
+                   // skeletonRB.MovePosition(new Vector2(other.transform.position.x, other.transform.position.y));
+                    skeletonRB.AddForce(new Vector2(-.3f, 0) * speed);
                     // target = GameObject.FindWithTag("Player").transform;
                     //skeletonRB.MovePosition(transform.position - target.position * speed);
                     //skeletonRB.velocity = new Vector3(-speed, 0, 0);
                     
             }
             else
-                skeletonRB.AddForce(new Vector2(1, 0) * speed);
+                //skeletonRB.MovePosition(new Vector2(other.transform.position.x, other.transform.position.y));
+                skeletonRB.AddForce(new Vector2(.3f, 0) * speed);
             //skeletonRB.MovePosition(transform.position + target.position * speed);
               // skeletonRB.velocity = new Vector3(speed, 0, 0);
             //skeletonAnimator.SetBool("atking", charging);  //change animation
