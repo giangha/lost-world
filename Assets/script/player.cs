@@ -92,7 +92,11 @@ public class player : MonoBehaviour {
         }
 
 
-
+        if (curHealth <= 0)
+        {
+            die = true;
+            Invoke("Dying", 2);
+        }
 
     }
 
