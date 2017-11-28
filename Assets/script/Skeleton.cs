@@ -10,7 +10,7 @@ public class Skeleton : MonoBehaviour {
     private Animator skeletonAnimator;
     public int currentHealth = 4;
 	public Slider skeletonSlider;
-    public Collider2D atkTrigger;
+   // public Collider2D atkTrigger;
 
     //animation
     private float attackTimer = 1;
@@ -34,7 +34,7 @@ public class Skeleton : MonoBehaviour {
 
     private void Awake()
     {
-        atkTrigger.enabled = false;
+        //atkTrigger.enabled = false;
     }
 
 
@@ -93,7 +93,7 @@ public class Skeleton : MonoBehaviour {
         Destroy(skeletonGraphic);
     }
     void OnTriggerEnter2D(Collider2D other) {
-        atkTrigger.enabled = true;
+        //atkTrigger.enabled = true;
         if (other.tag == "Player") {
             if (facingRight && other.transform.position.x < transform.position.x)
                 flipFacing();
