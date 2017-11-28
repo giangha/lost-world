@@ -83,6 +83,7 @@ public class Skeleton : MonoBehaviour {
         speed = 0;
         canFlip = false;
         skeletonSlider.gameObject.SetActive(false);
+        GameObject.Find("skeleton_atk").GetComponent<skeleton_atk>().damage = 0;
         Invoke("gone", 2);
 
 

@@ -7547,27 +7547,27 @@ Prefab:
     - target: {fileID: 50681103881519012, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: m_GravityScale
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 61785098171284602, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: m_Offset.y
-      value: 1.3671541
+      value: -1.1227269
       objectReference: {fileID: 0}
     - target: {fileID: 61785098171284602, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: m_Size.y
-      value: 5.4543076
+      value: 0.47454548
       objectReference: {fileID: 0}
     - target: {fileID: 61785098171284602, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: m_Offset.x
-      value: -0.06393719
+      value: 0.015106201
       objectReference: {fileID: 0}
     - target: {fileID: 61785098171284602, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695,
         type: 2}
       propertyPath: m_Size.x
-      value: 0.48225212
+      value: 1.0355587
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6ceeb72ad7a8ae47a2a9bc08f9ef695, type: 2}
@@ -8983,8 +8983,8 @@ GameObject:
   - component: {fileID: 1569876288}
   - component: {fileID: 1569876287}
   m_Layer: 10
-  m_Name: attack trigger
-  m_TagString: Untagged
+  m_Name: skeleton_atk
+  m_TagString: skeleton_atk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

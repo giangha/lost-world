@@ -12,6 +12,7 @@ TagManager:
   - heart
   - sword
   - spike
+  - skeleton_atk
   layers:
   - Default
   - TransparentFX
