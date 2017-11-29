@@ -30,7 +30,8 @@ public class Boss : MonoBehaviour {
 	bool enableAtk2 = false;
 	Rigidbody2D bossRB;
 	bool die = false;
-	EdgeCollider2D x;
+	EdgeCollider2D bossClaw;
+	PolygonCollider2D bossHorn;
 
 	// Use this for initialization
 	void Start() {
@@ -43,8 +44,10 @@ public class Boss : MonoBehaviour {
 		bossSlider.maxValue = currentHealth;
 		bossSlider.value = currentHealth;
 
-		x = bossGraphic.GetComponentInChildren<EdgeCollider2D>();
-		x.enabled = false;
+		bossClaw = bossGraphic.GetComponentInChildren<EdgeCollider2D>();
+		bossHorn = bossGraphic.GetComponentInChildren<PolygonCollider2D> ();
+		bossHorn.enabled = false;
+		bossClaw.enabled = false;
 	}
 
 	// Update is called once per frame
@@ -56,6 +59,8 @@ public class Boss : MonoBehaviour {
 		bossAnimator.SetFloat ("speed", Mathf.Abs (bossRB.velocity.x));
 		bossAnimator.SetBool("die", die);
 
+		Atk2 ();
+
 		// set forward velocity
 		facing = this.transform.localScale.x / Mathf.Abs (this.transform.localScale.x);
 		bossRB.velocity = new Vector2 (-facing * speed, bossRB.velocity.y);
@@ -66,10 +71,17 @@ public class Boss : MonoBehaviour {
 		else if (attacking2 && !attacking2)
 			bossAnimator.speed = speed / 50f;
 
+		// enable or disable damage by claw
 		if (!attacking)
-			x.enabled = false;
+			bossClaw.enabled = false;
 		else
-			x.enabled = true;
+			bossClaw.enabled = true;
+
+		// enable or disable damage by horn
+		if (!attacking2)
+			bossHorn.enabled = false;
+		else
+			bossHorn.enabled = true;
 
 		// random flip when not near player
 		if (Time.time > nextFlipChance) {
@@ -89,24 +101,23 @@ public class Boss : MonoBehaviour {
 
 	private void Atk2()
 	{
-		if (enableAtk2) 
+		if (attacking2) 
 		{
 			startAttack = Time.time;
-			attacking2 = true;
-
 			enableAtk2 = false;
 				
-				if (Time.time - startAttack > 0.25f && Time.time - startAttack < 0.8f)
-					speed = 50f;
-				else if (Time.time - startAttack > 0.8f && Time.time - startAttack < 2f) {
-					speed = 0f;
-					attacking2 = false;
-				}
-		}
-		 
+			if (Time.time - startAttack < 0.25f)
+				speed = 0f;
+			else if (Time.time - startAttack > 0.25f && Time.time - startAttack < 0.8f)
+				speed = 50f;
+			else {
+				speed = 0f;
+				attacking2 = false;
+			}
 
-		else if (Time.time - startAttack > 10f) {
-			enableAtk2 = true;
+			if (Time.time - startAttack > 10f) {
+				enableAtk2 = true;
+			}
 		}
 	}
 
@@ -147,14 +158,37 @@ public class Boss : MonoBehaviour {
 
 				//attack behavior
 
-				if (Mathf.Abs (other.transform.position.x - this.transform.position.x) >= 30.0f) {
+				// if > 30 away, walk fast to player
+				if (Mathf.Abs (other.transform.position.x - this.transform.position.x) >= 30.0f) 
+				{
 					attacking = false;
-				} else if (Mathf.Abs (other.transform.position.x - this.transform.position.x) >= 5.0f) {
+					attacking2 = false;
+					speed = 20f;
+				} 
+
+				// if > 5 away, walk to player
+				else if ((Mathf.Abs (other.transform.position.x - this.transform.position.x) >= 5.0f
+					&& other.transform.position.y < 0f) 
+					|| Mathf.Abs (other.transform.position.x - this.transform.position.x) > 20.0f) 
+				{
 					speed = 10f;
 					attacking = false;
-				} else {
+					attacking2 = false;
+				}
+
+				// if flying and close do special attack
+				else if(Mathf.Abs (other.transform.position.x - this.transform.position.x) <= 20.0f
+					&& other.transform.position.y > 0f)
+				{
+					attacking2 = true;
+					attacking = false;
+				}
+
+				// if not flying and close to player, attack
+				else {
 					speed = 0f;
 					attacking = true;
+					attacking2 = false;
 				}
 			}
 		}
@@ -167,7 +201,6 @@ public class Boss : MonoBehaviour {
 			canFlip = true;
 			attacking = false;
 			attacking2 = false;
-			bossRB.velocity = new Vector2(0f, 0f);
 			speed = 0f;
 		}
 
