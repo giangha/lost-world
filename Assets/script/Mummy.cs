@@ -39,7 +39,8 @@ public class Mummy : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
         mummyAnimator.SetBool("die", die);
-		if (Time.time > nextFlipChance) {
+        mummyAnimator.SetBool("atk", attacking);
+        if (Time.time > nextFlipChance) {
 			if (Random.Range(0, 10) >= 2)
 				flipFacing();
 			nextFlipChance = Time.time + flipTime;
@@ -81,7 +82,7 @@ public class Mummy : MonoBehaviour {
 				flipFacing ();
 
 			canFlip = false;
-			attacking = true;
+			//attacking = true;
 
 			startChargingTime = Time.time + chargeTime;
 		} 
@@ -96,23 +97,25 @@ public class Mummy : MonoBehaviour {
 				//attack behavior
 
 				if (!facingRight) {
-					if (Mathf.Abs (other.transform.position.x - this.transform.position.x) > 10.0f) {
+					if (Mathf.Abs (other.transform.position.x - this.transform.position.x) > 5f) {
 						mummyRB.velocity = new Vector2 (-1, 0) * speed;
+                        attacking = false;
 					} 
 
 					else {
 						mummyRB.velocity = new Vector2 (-1, 0.25f)*speed;
-						mummyAnimator.SetBool ("atk", true);
+                        attacking = true;
 					}
 				}
 				else {
-					if (Mathf.Abs (other.transform.position.x - this.transform.position.x) > 10.0f) {
+					if (Mathf.Abs (other.transform.position.x - this.transform.position.x) > 5f) {
 						mummyRB.velocity = new Vector2 (1, 0) * speed;
+                        attacking = false;
 					} 
 
 					else {
 						mummyRB.velocity = new Vector2 (1, 0.25f)*speed;
-						mummyAnimator.SetBool ("atk", true);
+                        attacking = true;
 					}
 				}
 
