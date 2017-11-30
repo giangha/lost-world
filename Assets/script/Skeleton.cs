@@ -33,6 +33,8 @@ public class Skeleton : MonoBehaviour {
     bool die;
     bool atk;
 
+    BoxCollider2D m_ObjectCollider;
+
     private void Awake()
     {
         //atkTrigger.enabled = false;
@@ -41,7 +43,7 @@ public class Skeleton : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        
+        m_ObjectCollider = GetComponent<BoxCollider2D>();
         skeletonAnimator = GetComponent<Animator>();
         skeletonRB = GetComponent<Rigidbody2D>();
         skeletonGraphic = this.gameObject;
@@ -70,13 +72,15 @@ public class Skeleton : MonoBehaviour {
             die2.Play();
            
             die = true;
-
+            m_ObjectCollider.isTrigger = true;
+            m_ObjectCollider.enabled = false;
             Stop();
 
         
       
             }
 
+        
     }
 
     private void Stop()
@@ -87,7 +91,7 @@ public class Skeleton : MonoBehaviour {
         sword.gameObject.SetActive(false);
         skeletonSlider.gameObject.SetActive(false);
         //GameObject.Find("skeleton_atk").GetComponent<skeleton_atk>().damage = 0;
-        Invoke("gone", 2);
+        Invoke("gone", 5);
 
 
     }
@@ -97,7 +101,7 @@ public class Skeleton : MonoBehaviour {
         Destroy(skeletonGraphic);
     }
     void OnTriggerEnter2D(Collider2D other) {
-        //atkTrigger.enabled = true;
+
         if (other.tag == "Player") {
             if (facingRight && other.transform.position.x < transform.position.x)
                 flipFacing();
@@ -113,25 +117,32 @@ public class Skeleton : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D other) {
-        
+
+
+        atk = true; 
         if (other.tag == "Player") {
-            atk = true;
+            
             if (startChargingTime <= Time.time)
             {
                 
               if (!facingRight)
                {
-
-                   // skeletonRB.MovePosition(new Vector2(other.transform.position.x, other.transform.position.y));
+                    
+                    //atk = false;
+                    // skeletonRB.MovePosition(new Vector2(other.transform.position.x, other.transform.position.y));
                     skeletonRB.AddForce(new Vector2(-.3f, 0) * speed);
                     // target = GameObject.FindWithTag("Player").transform;
                     //skeletonRB.MovePosition(transform.position - target.position * speed);
                     //skeletonRB.velocity = new Vector3(-speed, 0, 0);
                     
             }
-            else
+                else
+                {   
+                    skeletonRB.AddForce(new Vector2(.3f, 0) * speed);
+
+                }
                 //skeletonRB.MovePosition(new Vector2(other.transform.position.x, other.transform.position.y));
-                skeletonRB.AddForce(new Vector2(.3f, 0) * speed);
+                
             //skeletonRB.MovePosition(transform.position + target.position * speed);
               // skeletonRB.velocity = new Vector3(speed, 0, 0);
             //skeletonAnimator.SetBool("atking", charging);  //change animation
