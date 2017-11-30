@@ -1057,7 +1057,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1548728480695376}
-  m_LocalRotation: {x: 0, y: 0, z: 0.44209883, w: 0.89696634}
+  m_LocalRotation: {x: 0, y: 0, z: 0.4420988, w: 0.89696634}
   m_LocalPosition: {x: 0.42877916, y: -0.050974302, z: -0.009000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1274,7 +1274,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794204399750426}
-  m_LocalRotation: {x: 0, y: 0, z: 0.74225926, w: 0.67011285}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7422593, w: 0.67011285}
   m_LocalPosition: {x: 0.18758176, y: 0.53307766, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1534,7 +1534,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1598380952527290}
-  m_LocalRotation: {x: 0, y: 0, z: 0.474997, w: 0.8799874}
+  m_LocalRotation: {x: 0, y: 0, z: 0.47499704, w: 0.8799874}
   m_LocalPosition: {x: 0.124625966, y: 0.01754304, z: -0.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1619,7 +1619,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1396677783191326}
-  m_LocalRotation: {x: 0, y: 0, z: 0.44209883, w: 0.89696634}
+  m_LocalRotation: {x: 0, y: 0, z: 0.4420988, w: 0.89696634}
   m_LocalPosition: {x: 1.2863052, y: -0.070970304, z: -0.023000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1870,9 +1870,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: 0, z: 0.74225926, w: 0.67011285}
-        inSlope: {x: 0, y: 0, z: 0.043064114, w: -0.04930586}
-        outSlope: {x: 0, y: 0, z: 0.043064114, w: -0.04930586}
+        value: {x: 0, y: 0, z: 0.74225926, w: 0.6701128}
+        inSlope: {x: 0, y: 0, z: 0.043064114, w: -0.04930574}
+        outSlope: {x: 0, y: 0, z: 0.043064114, w: -0.04930574}
         tangentMode: 0
       - serializedVersion: 2
         time: 0.50200003
@@ -1882,9 +1882,9 @@ AnimationClip:
         tangentMode: 0
       - serializedVersion: 2
         time: 1
-        value: {x: 0, y: 0, z: 0.74225926, w: 0.67011285}
-        inSlope: {x: 0, y: 0, z: -0.043410018, w: 0.0497019}
-        outSlope: {x: 0, y: 0, z: -0.043410018, w: 0.0497019}
+        value: {x: 0, y: 0, z: 0.74225926, w: 0.6701128}
+        inSlope: {x: 0, y: 0, z: -0.043410018, w: 0.04970178}
+        outSlope: {x: 0, y: 0, z: -0.043410018, w: 0.04970178}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
