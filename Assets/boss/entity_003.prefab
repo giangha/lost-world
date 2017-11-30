@@ -2157,14 +2157,14 @@ AnimationClip:
       - serializedVersion: 2
         time: 0.80300003
         value: {x: -0.00074074, y: 0.94111115, z: 0}
-        inSlope: {x: -0.8314136, y: -4.664097, z: 0}
-        outSlope: {x: -0.8314136, y: -4.664097, z: 0}
+        inSlope: {x: -0.01923077, y: -1.2884616, z: 0}
+        outSlope: {x: -0.01923077, y: -1.2884616, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1
-        value: {x: -0.32074073, y: -0.3888889, z: 0}
-        inSlope: {x: -1.6243657, y: -6.7512703, z: 0}
-        outSlope: {x: -1.6243657, y: -6.7512703, z: 0}
+        value: {x: -0.00074074, y: 0.94111115, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
