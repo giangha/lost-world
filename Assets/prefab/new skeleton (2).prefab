@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 50
-  currentHealth: 2
+  currentHealth: 4
   skeletonSlider: {fileID: 114389216126493834}
   sword: {fileID: 1668887065341266}
   attackCd: 0.3
