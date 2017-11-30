@@ -64,6 +64,8 @@ public class Boss : MonoBehaviour {
 		// set forward velocity
 		facing = this.transform.localScale.x / Mathf.Abs (this.transform.localScale.x);
 		bossRB.velocity = new Vector2 (-facing * speed, bossRB.velocity.y);
+		AudioSource audio = GetComponent<AudioSource>();
+		audio.Play ();
 
 		// match animation speed with character speed
 		if (bossRB.velocity.x != 0f && !attacking && !attacking2)
@@ -105,6 +107,7 @@ public class Boss : MonoBehaviour {
 		{
 			startAttack = Time.time;
 			enableAtk2 = false;
+
 				
 			if (Time.time - startAttack < 0.25f)
 				speed = 0f;
