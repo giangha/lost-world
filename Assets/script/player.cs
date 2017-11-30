@@ -94,8 +94,11 @@ public class player : MonoBehaviour {
 
         if (curHealth <= 0)
         {
+            
             die = true;
-            Invoke("Dying", 2);
+            speed = 0;
+            jumpPower = 0;
+            Invoke("Dying",4);
         }
 
     }

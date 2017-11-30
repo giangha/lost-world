@@ -6,7 +6,7 @@ public class mummy_atk : MonoBehaviour {
 
 
  
-    public int damage = 5;
+    public int damage = 2;
 
     float attackRate = 1;
     float nextAttack = 0;
