@@ -6666,7 +6666,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725555510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 334.5, y: 188, z: 0}
+  m_LocalPosition: {x: 380.5, y: 214, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1169836669}
@@ -11995,7 +11995,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169836668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -334.5, y: 188, z: 0}
+  m_LocalPosition: {x: -380.5, y: 214, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1833251077}
@@ -12919,7 +12919,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 203140957
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 55ff94e11751942c896c59cfa8435eb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16291,6 +16291,7 @@ MonoBehaviour:
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 919247375}
+  sword: {fileID: 0}
   attackCd: 0.3
   skeletonGraphic: {fileID: 0}
   chargeTime: 0
@@ -16993,6 +16994,7 @@ MonoBehaviour:
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 650161281}
+  sword: {fileID: 0}
   attackCd: 0.3
   skeletonGraphic: {fileID: 0}
   chargeTime: 0
@@ -18507,7 +18509,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1824734955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -334.5, y: 141.97998, z: 0}
+  m_LocalPosition: {x: -380.5, y: 167.97998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 868832320}
@@ -19279,6 +19281,7 @@ MonoBehaviour:
   speed: 50
   currentHealth: 10
   skeletonSlider: {fileID: 1306422295}
+  sword: {fileID: 0}
   attackCd: 0.3
   skeletonGraphic: {fileID: 0}
   chargeTime: 0
