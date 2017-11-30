@@ -126,7 +126,7 @@ public class Boss : MonoBehaviour {
 		speed = 0;
 		canFlip = false;
 		bossSlider.gameObject.SetActive(false);
-		Invoke("gone", 2);
+		Invoke("gone", 5);
 
 
 	}
