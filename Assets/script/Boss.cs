@@ -7,11 +7,13 @@ public class Boss : MonoBehaviour {
 
 	const int LEFT = -1;
 	const int RIGHT = 1;
-
+    public Object door;
 	public float speed = 0f;
 	Animator bossAnimator;
 	public int currentHealth = 4;
 	public Slider bossSlider;
+    public GameObject clawdmg;
+    public GameObject hornDmg;
 
 	//facing
 	public GameObject bossGraphic;
@@ -129,13 +131,16 @@ public class Boss : MonoBehaviour {
 		speed = 0;
 		canFlip = false;
 		bossSlider.gameObject.SetActive(false);
-		Invoke("gone", 2);
+		Invoke("gone", 5);
+        // Instantiate(door);
+        hornDmg.gameObject.SetActive(false);
+        clawdmg.gameObject.SetActive(false);
 
-
-	}
+    }
 
 	private void gone()
 	{
+        
 		Destroy(bossGraphic);
 	}
 
